@@ -1,0 +1,46 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+height: 100vh;
+  background-color: #ffffff;  
+}
+.container
+{
+	width: 1100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+ .container .card
+{
+	width: 300px;
+	height: 400px;
+	background: #0c002b;display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+	
+}
+.container .card::before
+{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	display:flex ;
+	background: linear-gradient(
+    to right, 
+    
+	#0c002b 50%,
+    rgba(255, 255, 255, 0.1) 50%, 
+  );
+}
+
